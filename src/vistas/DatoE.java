@@ -74,11 +74,11 @@ public class DatoE extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setText("jLabel6");
+        jLabel6.setText("Games planet");
 
-        jLabel7.setText("jLabel7");
+        jLabel7.setText("Col. centro Av. 19");
 
-        jLabel8.setText("jLabel8");
+        jLabel8.setText("62212345678");
 
         jLabel9.setText("jLabel9");
 
