@@ -207,6 +207,12 @@ public class AltaCliente extends javax.swing.JFrame {
             
         }else{
             JOptionPane.showMessageDialog(null, "Datos No agregados con Exito");
+            
+            nombreTF.setText("");
+            NControTF.setText("");
+            EmailTF.setText("");
+            TelefonoTF.setText("");
+            DireccionTF.setText("");
         }
     }//GEN-LAST:event_RegistrarbtnActionPerformed
 

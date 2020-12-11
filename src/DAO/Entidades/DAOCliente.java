@@ -40,7 +40,7 @@ baseDatos bd = new baseDatos();
     boolean result = false;
         try {
             cliente client = (cliente) o;
-            bd.abrirConexion();//+"nombre,email,semestre,carrera)"
+            bd.abrirConexion();
             String consulta = "UPDATE cliente SET "
                     + " nombre = '"+client.getNombre()+"',"
                     + " nControl = '"+client.getnControl()+"', "

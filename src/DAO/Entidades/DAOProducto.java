@@ -118,8 +118,7 @@ baseDatos bd = new baseDatos();
                 p.setNombreProducto(rs.getString("nombreProducto"));
                 p.setPrecio(rs.getDouble("Precio"));
                 p.setInventario(rs.getInt("inventario"));   
-                
-                
+                                
             }
             
         } catch (Exception e) {

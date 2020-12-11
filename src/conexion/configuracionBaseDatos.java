@@ -11,9 +11,9 @@ package conexion;
  */
 public class configuracionBaseDatos {
     private String controlador = "com.mysql.jdbc.Driver";
-    private String baseDatos = "jdbc:mysql://localhost:3306/videoGames";
+    private String baseDatos = "jdbc:mysql://localhost:3306/progra";
     private String user = "root";
-    private String password = "1234";
+    private String password = "";
 
     public configuracionBaseDatos() {
     }

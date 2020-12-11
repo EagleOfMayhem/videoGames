@@ -207,6 +207,10 @@ public class AltaProducto extends javax.swing.JFrame {
            
        }else{
            JOptionPane.showMessageDialog(null, "Datos NO agregados con Exito");
+           Nombretxt.setText("");
+           codigotxt.setText("");
+           rentatxt.setText("");
+           existenciatxt.setText("");
        }
     }//GEN-LAST:event_regresarbtnActionPerformed
 
