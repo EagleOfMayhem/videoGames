@@ -62,8 +62,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(0, 0, 102));
         jPanel3.setForeground(new java.awt.Color(102, 102, 255));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("/Users/jesusmendivil/NetBeansProjects/RentaVideojuegos/src/consola-juegos-letras-letrero-neon-fondo-ladrillo_1262-11854.jpg")); // NOI18N
-
         jTextField1.setBackground(new java.awt.Color(0, 0, 102));
         jTextField1.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
@@ -79,13 +77,14 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(78, 78, 78)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(268, 268, 268)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(61, 61, 61)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 610, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(104, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(266, 266, 266))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -96,8 +95,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36))
         );
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/consola-juegos-letras-letrero-neon-fondo-ladrillo_1262-11854.jpg"))); // NOI18N
 
         txtMenu.setText("MENU PRINCIPAL");
 

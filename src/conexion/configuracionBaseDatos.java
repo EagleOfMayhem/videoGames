@@ -13,7 +13,7 @@ public class configuracionBaseDatos {
     private String controlador = "com.mysql.jdbc.Driver";
     private String baseDatos = "jdbc:mysql://localhost:3306/videoGames";
     private String user = "root";
-    private String password = "";
+    private String password = "1234";
 
     public configuracionBaseDatos() {
     }

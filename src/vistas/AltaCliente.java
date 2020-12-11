@@ -198,6 +198,13 @@ public class AltaCliente extends javax.swing.JFrame {
         boolean t = dbcliente.agregar(client);
         if(t){
             JOptionPane.showMessageDialog(null, "Datos agregados con Exito");
+            
+            nombreTF.setText("");
+            NControTF.setText("");
+            EmailTF.setText("");
+            TelefonoTF.setText("");
+            DireccionTF.setText("");
+            
         }else{
             JOptionPane.showMessageDialog(null, "Datos No agregados con Exito");
         }

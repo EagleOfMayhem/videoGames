@@ -77,8 +77,8 @@ baseDatos bd = new baseDatos();
     public List<Object> buscar() {
     List<Object> product = new ArrayList();    
         try {
-            bd.abrirConexion();
-            String consulta ="SELECT * FROM producto";
+            if(bd.abrirConexion()){
+                String consulta ="SELECT * FROM producto";
             
             ResultSet rs = bd.consultarDatos(consulta);
             while(rs.next()){
@@ -90,7 +90,12 @@ baseDatos bd = new baseDatos();
                 p.setInventario(rs.getInt("inventario"));
                
                 product.add(p);
-            }            
+                
+            }
+            
+            }else{
+                System.out.println("No entro la consulta");
+            }           
         } catch (Exception e) {
             
         }finally{
@@ -111,15 +116,21 @@ baseDatos bd = new baseDatos();
                 p.setId(rs.getInt("id"));
                 p.setCodigoProducto(rs.getInt("codigoProducto"));
                 p.setNombreProducto(rs.getString("nombreProducto"));
-                p.setPrecio(rs.getDouble("precio"));
-                p.setInventario(rs.getInt("inventario"));             
+                p.setPrecio(rs.getDouble("Precio"));
+                p.setInventario(rs.getInt("inventario"));   
+                
+                
             }
             
         } catch (Exception e) {
         }finally{
             bd.cerrarConexion();
-        }       
+        }    
+        
        return p;
     }
     
+   
+
+  
 }
