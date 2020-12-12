@@ -167,11 +167,11 @@ public class ActualizacionExisPrecio extends javax.swing.JFrame {
 
     private void buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarActionPerformed
        DAO dbProductos = new DAOProducto();
-       producto pro = new producto();
-       dbProductos.BuscarID(Integer.parseInt(txtProb.getText()));
-       //txtPrecio.setText( pro.setId(BuscarID.getPrecio));
-      // txtProb.setText( pro.setId(BuscarID.getExistencia));
-        // txtPrecio.setText(Integer.parseInt(buscar.getPrecio()));
+       producto pro = (producto)dbProductos.BuscarID(Integer.parseInt(txtProb.getText()));
+       
+       txtPrecio.setText(pro.getPrecio()+"");
+       txtProb.setText( pro.getNombreProducto());
+       
          
        
     }//GEN-LAST:event_buscarActionPerformed
